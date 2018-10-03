@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <org.opencv.android.JavaCameraView
+        android:id="@+id/fd_activity_surface_view"
+        android:layout_width="273dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="319dp" />
+
+    <TextView
+        android:id="@+id/background_c"
+        android:layout_width="279dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:background="@android:color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tv_textmessage"
+        android:layout_width="291dp"
+        android:layout_height="118dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="109dp"
+        android:layout_marginStart="15dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_textmessage"
+        android:layout_alignStart="@+id/tv_textmessage"
+        android:text="Message:"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_tl"
+        android:layout_width="124dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="click_btn_tl"
+        android:text="Hello "
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_tr"
+        android:layout_width="121dp"
+        android:layout_height="104dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:onClick="click_btn_tr"
+        android:text="Hi "
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_bl"
+        android:layout_width="130dp"
+        android:layout_height="95dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="click_btn_bl"
+        android:text="Next"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_br"
+        android:layout_width="118dp"
+        android:layout_height="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="click_btn_br"
+        android:text="Send"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/btn_del_char"
+        android:layout_width="49dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="146dp"
+        android:background="@android:color/background_dark"
+        android:onClick="delete_letter"
+        />
+
+</RelativeLayout>
